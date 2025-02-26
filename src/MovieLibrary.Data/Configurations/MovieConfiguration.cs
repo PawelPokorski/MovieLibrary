@@ -17,7 +17,7 @@ public class MovieConfiguration : BaseEntityConfiguration<Movie>
             .IsRequired();
 
         builder.Property(m => m.Year)
-            .HasColumnType("year");
+            .HasColumnType("smallint");
 
         builder.Property(m => m.AverageRating)
             .HasColumnType("decimal(3, 2)");

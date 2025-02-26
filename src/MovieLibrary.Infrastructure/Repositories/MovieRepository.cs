@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieLibrary.Application.Interfaces.Repositories;
+using MovieLibrary.Core.Interfaces.Repositories;
 using MovieLibrary.Core.Models;
 using MovieLibrary.Data.Context;
 

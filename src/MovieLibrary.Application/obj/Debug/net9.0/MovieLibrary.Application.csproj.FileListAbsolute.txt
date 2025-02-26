@@ -1,0 +1,16 @@
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\bin\Debug\net9.0\MovieLibrary.Application.deps.json
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\bin\Debug\net9.0\MovieLibrary.Application.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\bin\Debug\net9.0\MovieLibrary.Application.pdb
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\bin\Debug\net9.0\MovieLibrary.Core.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\bin\Debug\net9.0\MovieLibrary.Core.pdb
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.csproj.AssemblyReference.cache
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.AssemblyInfoInputs.cache
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.AssemblyInfo.cs
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.csproj.CoreCompileInputs.cache
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.sourcelink.json
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLib.53992414.Up2Date
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\refint\MovieLibrary.Application.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\MovieLibrary.Application.pdb
+C:\Projects\MovieLibrary\src\MovieLibrary.Application\obj\Debug\net9.0\ref\MovieLibrary.Application.dll

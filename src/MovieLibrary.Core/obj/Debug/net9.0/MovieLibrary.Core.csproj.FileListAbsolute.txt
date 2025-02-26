@@ -1,0 +1,13 @@
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\bin\Debug\net9.0\MovieLibrary.Core.deps.json
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\bin\Debug\net9.0\MovieLibrary.Core.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\bin\Debug\net9.0\MovieLibrary.Core.pdb
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.csproj.AssemblyReference.cache
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.AssemblyInfoInputs.cache
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.AssemblyInfo.cs
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.csproj.CoreCompileInputs.cache
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.sourcelink.json
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\refint\MovieLibrary.Core.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\MovieLibrary.Core.pdb
+C:\Projects\MovieLibrary\src\MovieLibrary.Core\obj\Debug\net9.0\ref\MovieLibrary.Core.dll
