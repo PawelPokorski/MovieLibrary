@@ -9,7 +9,9 @@ public class MovieRepository(MovieContext context) : IMovieRepository
 {
     public async Task<Movie?> GetByIdAsync(Guid id, CancellationToken cancellation = default)
     {
-        return await context.Movies.SingleOrDefaultAsync(m => m.Id == id, cancellation);
+        return await context.Movies
+            .Include(m => m.Genre)
+            .FirstOrDefaultAsync(m => m.Id == id, cancellation);
     }
 
     public async Task<IEnumerable<Movie>> GetAllAsync(CancellationToken cancellation = default)

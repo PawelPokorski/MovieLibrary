@@ -4,7 +4,9 @@ public class MovieDto
 {
     public string Title { get; set; }
     public short Year { get; set; }
-    public decimal AverageRating { get; set; } // MovieRatings
+    public string Genre { get; set; }
+    public decimal AverageRating { get; set; }
 
-    public string Genre { get; set; } // Genres.GetById(Movie.GenreId).Name;
+    // public string Director { get; set; }
+    // public IEnumerable<Actor> Actors { get; set; }
 }

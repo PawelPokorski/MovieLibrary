@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.Data", "MovieL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.Application", "MovieLibrary.Application\MovieLibrary.Application.csproj", "{20A0475E-DD0A-4795-ABD7-B8FDBC7001C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.Core.Tests", "..\tests\MovieLibrary.Core.Tests\MovieLibrary.Core.Tests.csproj", "{FF86C513-335D-EFC2-5984-BAB00446C142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{20A0475E-DD0A-4795-ABD7-B8FDBC7001C1}.Release|x64.Build.0 = Release|Any CPU
 		{20A0475E-DD0A-4795-ABD7-B8FDBC7001C1}.Release|x86.ActiveCfg = Release|Any CPU
 		{20A0475E-DD0A-4795-ABD7-B8FDBC7001C1}.Release|x86.Build.0 = Release|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Debug|x64.Build.0 = Debug|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Release|x64.ActiveCfg = Release|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Release|x64.Build.0 = Release|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF86C513-335D-EFC2-5984-BAB00446C142}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

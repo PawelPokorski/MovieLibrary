@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MovieLibrary.Core\MovieLibrary.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Movies\GetMoviesByName\" />
+    <Folder Include="Movies\GetMovieById\" />
   </ItemGroup>
 
 </Project>

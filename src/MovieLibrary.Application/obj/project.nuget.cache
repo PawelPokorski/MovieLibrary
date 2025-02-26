@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IsCU+7EVvKo=",
+  "dgSpecHash": "nOmWYMW3Qfo=",
   "success": true,
   "projectFilePath": "C:\\Projects\\MovieLibrary\\src\\MovieLibrary.Application\\MovieLibrary.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Pawel\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
+    "C:\\Users\\Pawel\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\Pawel\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.2\\microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.2\\microsoft.entityframeworkcore.abstractions.9.0.2.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.2\\microsoft.entityframeworkcore.analyzers.9.0.2.nupkg.sha512",
