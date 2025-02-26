@@ -10,6 +10,8 @@ public class MovieContext (DbContextOptions<MovieContext> options) : DbContext(o
     public DbSet<Genre> Genres { get; set; }
     public DbSet<MovieRating> MovieRatings { get; set; }
 
+    public DbSet<User> Users { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasDefaultSchema("MoviesLibrary");

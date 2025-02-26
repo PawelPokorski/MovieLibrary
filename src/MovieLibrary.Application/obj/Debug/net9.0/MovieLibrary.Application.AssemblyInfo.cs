@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("MovieLibrary.Application.Tests")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieLibrary.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b9486a4552383464f1be8f2593221a3c30fedf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea207cfd8536339c78ee4eb3bc5c3f4281c25d81")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieLibrary.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieLibrary.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

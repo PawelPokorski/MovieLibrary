@@ -94,13 +94,35 @@ namespace MovieLibrary.Data.Migrations
                     b.ToTable("MovieRatings", "MoviesLibrary");
                 });
 
+            modelBuilder.Entity("MovieLibrary.Core.Models.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users", "MoviesLibrary");
+                });
+
             modelBuilder.Entity("MovieLibrary.Core.Models.Movie", b =>
                 {
-                    b.HasOne("MovieLibrary.Core.Models.Genre", null)
+                    b.HasOne("MovieLibrary.Core.Models.Genre", "Genre")
                         .WithMany()
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Genre");
                 });
 
             modelBuilder.Entity("MovieLibrary.Core.Models.MovieRating", b =>
@@ -110,9 +132,20 @@ namespace MovieLibrary.Data.Migrations
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("MovieLibrary.Core.Models.User", null)
+                        .WithMany("MovieRatings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MovieLibrary.Core.Models.Movie", b =>
+                {
+                    b.Navigation("MovieRatings");
+                });
+
+            modelBuilder.Entity("MovieLibrary.Core.Models.User", b =>
                 {
                     b.Navigation("MovieRatings");
                 });

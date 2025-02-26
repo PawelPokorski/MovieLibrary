@@ -28,6 +28,21 @@ namespace MovieLibrary.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Users",
+                schema: "MoviesLibrary",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Movies",
                 schema: "MoviesLibrary",
                 columns: table => new
@@ -71,6 +86,13 @@ namespace MovieLibrary.Data.Migrations
                         principalTable: "Movies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_MovieRatings_Users_UserId",
+                        column: x => x.UserId,
+                        principalSchema: "MoviesLibrary",
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -102,6 +124,10 @@ namespace MovieLibrary.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Movies",
+                schema: "MoviesLibrary");
+
+            migrationBuilder.DropTable(
+                name: "Users",
                 schema: "MoviesLibrary");
 
             migrationBuilder.DropTable(

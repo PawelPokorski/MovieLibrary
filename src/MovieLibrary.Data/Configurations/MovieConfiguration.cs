@@ -22,7 +22,7 @@ public class MovieConfiguration : BaseEntityConfiguration<Movie>
         builder.Property(m => m.AverageRating)
             .HasColumnType("decimal(3, 2)");
 
-        builder.HasOne<Genre>()
+        builder.HasOne(m => m.Genre)
             .WithMany()
             .HasForeignKey(m => m.GenreId)
             .IsRequired();
