@@ -1,2 +1,6 @@
 src/.vs/
 .vs
+
+bin/
+obj/
+*.csproj
