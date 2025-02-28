@@ -12,9 +12,5 @@ public class Movie : Entity
     [ForeignKey("GenreId")]
     public Genre Genre { get; set; }
 
-    public IEnumerable<MovieRating> MovieRatings { get; set; }
-    
-    // public IEnumerable<Actor> Actors { get; set; }
-    // public Director Director { get; set; }
-    // public Image Image { get; set; }
+    public IEnumerable<MovieRating> MovieRatings { get; set; } = [];
 }

@@ -2,7 +2,7 @@
 using Moq;
 using MovieLibrary.Application.Dtos;
 using MovieLibrary.Application.Enums;
-using MovieLibrary.Application.Movies.GetMoviesByYear;
+using MovieLibrary.Application.Movies.Queries.GetMoviesByYear;
 using MovieLibrary.Core.Interfaces.Repositories;
 using MovieLibrary.Core.Models;
 
@@ -149,9 +149,9 @@ public class GetMoviesByYearQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Movie C", Year = 2023, AverageRating = 3 },
-            new MovieDto { Title = "Movie B", Year = 2023, AverageRating = 4 },
-            new MovieDto { Title = "Movie A", Year = 2023, AverageRating = 5 }
+            new MovieDto { Title = "Movie C", Year = 2023 },
+            new MovieDto { Title = "Movie B", Year = 2023 },
+            new MovieDto { Title = "Movie A", Year = 2023 }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByYearAsync(year, CancellationToken.None))
@@ -182,9 +182,9 @@ public class GetMoviesByYearQueryHandlerTests
         };
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Movie A", Year = 2023, AverageRating = 5 },
-            new MovieDto { Title = "Movie B", Year = 2023, AverageRating = 4 },
-            new MovieDto { Title = "Movie C", Year = 2023, AverageRating = 3 }
+            new MovieDto { Title = "Movie A", Year = 2023 },
+            new MovieDto { Title = "Movie B", Year = 2023 },
+            new MovieDto { Title = "Movie C", Year = 2023 }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByYearAsync(year, CancellationToken.None))

@@ -12,14 +12,19 @@ public class GenreRepository(MovieContext context) : IGenreRepository
         return await context.Genres.FindAsync(id, cancellation);
     }
 
+    public async Task<Genre?> GetByNameAsync(string name, CancellationToken cancellation = default)
+    {
+        return await context.Genres.SingleOrDefaultAsync(x => x.Name == name, cancellation);
+    }
+
     public async Task<IEnumerable<Genre>> GetAllAsync(CancellationToken cancellation = default)
     {
         return await context.Genres.AsNoTracking().ToListAsync(cancellation);
     }
 
-    public void Add(Genre genre)
+    public void Add(string name)
     {
-        context.Genres.Add(genre);
+        context.Genres.Add(new Genre { Name = name });
     }
 
     public void Update(Genre genre)

@@ -2,7 +2,7 @@
 using Moq;
 using MovieLibrary.Application.Dtos;
 using MovieLibrary.Application.Enums;
-using MovieLibrary.Application.Movies.GetMoviesByTitle;
+using MovieLibrary.Application.Movies.Queries.GetMoviesByTitle;
 using MovieLibrary.Core.Interfaces.Repositories;
 using MovieLibrary.Core.Models;
 
@@ -68,9 +68,9 @@ public class GetMoviesByTItleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie A", AverageRating = 5 },
-            new MovieDto { Title = "Test Movie B", AverageRating = 4 },
-            new MovieDto { Title = "Test Movie C", AverageRating = 3 }
+            new MovieDto { Title = "Test Movie A" },
+            new MovieDto { Title = "Test Movie B" },
+            new MovieDto { Title = "Test Movie C" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByTitleAsync(title, CancellationToken.None))
@@ -102,9 +102,9 @@ public class GetMoviesByTItleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie C", AverageRating = 3 },
-            new MovieDto { Title = "Test Movie B", AverageRating = 4 },
-            new MovieDto { Title = "Test Movie A", AverageRating = 5 }
+            new MovieDto { Title = "Test Movie C" },
+            new MovieDto { Title = "Test Movie B" },
+            new MovieDto { Title = "Test Movie A" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByTitleAsync(title, CancellationToken.None))
@@ -136,9 +136,9 @@ public class GetMoviesByTItleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie C", AverageRating = 3 },
-            new MovieDto { Title = "Test Movie B", AverageRating = 4 },
-            new MovieDto { Title = "Test Movie A", AverageRating = 5 }
+            new MovieDto { Title = "Test Movie C" },
+            new MovieDto { Title = "Test Movie B" },
+            new MovieDto { Title = "Test Movie A" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByTitleAsync(title, CancellationToken.None))
@@ -170,9 +170,9 @@ public class GetMoviesByTItleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie A", AverageRating = 5 },
-            new MovieDto { Title = "Test Movie B", AverageRating = 4 },
-            new MovieDto { Title = "Test Movie C", AverageRating = 3 }
+            new MovieDto { Title = "Test Movie A" },
+            new MovieDto { Title = "Test Movie B" },
+            new MovieDto { Title = "Test Movie C" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByTitleAsync(title, CancellationToken.None))
@@ -204,9 +204,9 @@ public class GetMoviesByTItleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie C", RatingCount = 3 },
-            new MovieDto { Title = "Test Movie B", RatingCount = 4 },
-            new MovieDto { Title = "Test Movie A", RatingCount = 5 }
+            new MovieDto { Title = "Test Movie C" },
+            new MovieDto { Title = "Test Movie B" },
+            new MovieDto { Title = "Test Movie A" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByTitleAsync(title, CancellationToken.None))
@@ -238,9 +238,9 @@ public class GetMoviesByTItleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie A", RatingCount = 5 },
-            new MovieDto { Title = "Test Movie B", RatingCount = 4 },
-            new MovieDto { Title = "Test Movie C", RatingCount = 3 }
+            new MovieDto { Title = "Test Movie A" },
+            new MovieDto { Title = "Test Movie B" },
+            new MovieDto { Title = "Test Movie C" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetByTitleAsync(title, CancellationToken.None))

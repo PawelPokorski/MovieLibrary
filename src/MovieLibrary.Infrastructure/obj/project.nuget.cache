@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0vTUCRYeVcA=",
+  "dgSpecHash": "5P5+cE2A6wo=",
   "success": true,
   "projectFilePath": "C:\\Projects\\MovieLibrary\\src\\MovieLibrary.Infrastructure\\MovieLibrary.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pawel\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\Pawel\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

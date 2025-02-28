@@ -2,6 +2,6 @@
 using MovieLibrary.Application.Dtos;
 using MovieLibrary.Application.Enums;
 
-namespace MovieLibrary.Application.Movies.GetMovies;
+namespace MovieLibrary.Application.Movies.Queries.GetMovies;
 
 public record GetMoviesQuery(MovieSortOption SortOption = MovieSortOption.AverageRatingDescending) : IQuery<IEnumerable<MovieDto>>;

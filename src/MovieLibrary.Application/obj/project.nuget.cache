@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nOmWYMW3Qfo=",
+  "dgSpecHash": "mKeJ2PzR9H0=",
   "success": true,
   "projectFilePath": "C:\\Projects\\MovieLibrary\\src\\MovieLibrary.Application\\MovieLibrary.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pawel\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
+    "C:\\Users\\Pawel\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Pawel\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.2\\microsoft.entityframeworkcore.9.0.2.nupkg.sha512",

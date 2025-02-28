@@ -13,7 +13,7 @@ public class MovieConfiguration : BaseEntityConfiguration<Movie>
         builder.ToTable("Movies");
 
         builder.Property(m => m.Title)
-            .HasMaxLength(200)
+            .HasMaxLength(100)
             .IsRequired();
 
         builder.Property(m => m.Year)

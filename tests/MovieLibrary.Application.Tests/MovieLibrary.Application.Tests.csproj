@@ -25,4 +25,9 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Movies\RemoveMovie\" />
+    <Folder Include="Movies\UpdateMovie\" />
+  </ItemGroup>
+
 </Project>

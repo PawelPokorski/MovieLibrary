@@ -3,7 +3,7 @@ using MovieLibrary.Application.Configuration.Queries;
 using MovieLibrary.Application.Dtos;
 using MovieLibrary.Core.Interfaces.Repositories;
 
-namespace MovieLibrary.Application.Movies.GetMoviesByYear;
+namespace MovieLibrary.Application.Movies.Queries.GetMoviesByYear;
 
 internal class GetMoviesByYearQueryHandler(IMovieRepository movieRepository, IMapper mapper)
     : IQueryHandler<GetMoviesByYearQuery, IEnumerable<MovieDto>>

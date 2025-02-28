@@ -1,4 +1,6 @@
-﻿namespace MovieLibrary.Application.Dtos;
+﻿using MovieLibrary.Core.Models;
+
+namespace MovieLibrary.Application.Dtos;
 
 public class MovieDto
 {
@@ -7,8 +9,5 @@ public class MovieDto
     public short Year { get; set; }
     public string Genre { get; set; }
     public decimal AverageRating { get; set; }
-    public int RatingCount { get; set; }
-
-    // public string Director { get; set; }
-    // public IEnumerable<Actor> Actors { get; set; }
+    public IEnumerable<MovieRating> MovieRatings { get; set; } // change to MovieRatingDto collection
 }

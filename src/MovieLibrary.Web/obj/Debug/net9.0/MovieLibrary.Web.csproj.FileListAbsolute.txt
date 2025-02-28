@@ -231,3 +231,4 @@ C:\Projects\MovieLibrary\src\MovieLibrary.Web\bin\Debug\net9.0\zh-Hant\Microsoft
 C:\Projects\MovieLibrary\src\MovieLibrary.Web\bin\Debug\net9.0\AutoMapper.dll
 C:\Projects\MovieLibrary\src\MovieLibrary.Web\bin\Debug\net9.0\MediatR.dll
 C:\Projects\MovieLibrary\src\MovieLibrary.Web\bin\Debug\net9.0\MediatR.Contracts.dll
+C:\Projects\MovieLibrary\src\MovieLibrary.Web\bin\Debug\net9.0\FluentValidation.dll

@@ -3,7 +3,7 @@ using MovieLibrary.Application.Configuration.Queries;
 using MovieLibrary.Application.Dtos;
 using MovieLibrary.Core.Interfaces.Repositories;
 
-namespace MovieLibrary.Application.Movies.GetTopMoviesByTitle;
+namespace MovieLibrary.Application.Movies.Queries.GetTopMoviesByTitle;
 
 internal class GetTopMoviesByTitleQueryHandler(IMovieRepository movieRepository, IMapper mapper)
     : IQueryHandler<GetTopMoviesByTitleQuery, IEnumerable<MovieDto>>

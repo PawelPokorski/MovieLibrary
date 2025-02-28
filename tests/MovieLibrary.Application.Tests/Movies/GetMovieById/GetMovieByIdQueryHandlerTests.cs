@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Moq;
 using MovieLibrary.Application.Dtos;
-using MovieLibrary.Application.Movies.GetMovieById;
+using MovieLibrary.Application.Movies.Queries.GetMovieById;
 using MovieLibrary.Core.Interfaces.Repositories;
 using MovieLibrary.Core.Models;
 
@@ -39,7 +39,7 @@ public class GetMovieByIdQueryHandlerTests
         // Arrange
         var movieId = Guid.NewGuid();
 
-        _movieRepositoryMock.Setup(repo => repo.GetByIdAsync(movieId, CancellationToken.None)).ReturnsAsync((Movie)null);
+        _movieRepositoryMock.Setup(repo => repo.GetByIdAsync(movieId, CancellationToken.None)).ReturnsAsync((Movie?)null);
 
         var handler = new GetMovieByIdQueryHandler(_movieRepositoryMock.Object, _mapperMock.Object);
         var query = new GetMovieByIdQuery(movieId);

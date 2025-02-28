@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Moq;
 using MovieLibrary.Application.Dtos;
-using MovieLibrary.Application.Movies.GetTopMoviesByTitle;
+using MovieLibrary.Application.Movies.Queries.GetTopMoviesByTitle;
 using MovieLibrary.Core.Interfaces.Repositories;
 using MovieLibrary.Core.Models;
 
@@ -18,7 +18,7 @@ public class GetTopMoviesByTitleQueryHandlerTests
         // Arrange
         var title = "Test";
         var movies = new List<Movie> { new Movie { Title = "Test Movie 1", AverageRating = 5 }, new Movie { Title = "Test Movie 2", AverageRating = 4 } };
-        var movieDtos = new List<MovieDto> { new MovieDto { Title = "Test Movie 1", AverageRating = 5 }, new MovieDto { Title = "Test Movie 2", AverageRating = 4 } };
+        var movieDtos = new List<MovieDto> { new MovieDto { Title = "Test Movie 1" }, new MovieDto { Title = "Test Movie 2" } };
 
         _movieRepositoryMock.Setup(repo => repo.GetTopByTitleAsync(title, 2, CancellationToken.None)).ReturnsAsync(movies);
         _mapperMock.Setup(mapper => mapper.Map<IEnumerable<MovieDto>>(movies)).Returns(movieDtos);
@@ -47,8 +47,8 @@ public class GetTopMoviesByTitleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie 1", AverageRating = 5 },
-            new MovieDto { Title = "Test Movie 2", AverageRating = 4 }
+            new MovieDto { Title = "Test Movie 1"},
+            new MovieDto { Title = "Test Movie 2"}
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetTopByTitleAsync(title, 2, CancellationToken.None)).ReturnsAsync(movies.Take(2));
@@ -78,9 +78,9 @@ public class GetTopMoviesByTitleQueryHandlerTests
 
         var movieDtos = new List<MovieDto>
         {
-            new MovieDto { Title = "Test Movie 2", AverageRating = 5 },
-            new MovieDto { Title = "Test Movie 3", AverageRating = 4 },
-            new MovieDto { Title = "Test Movie 1", AverageRating = 3 }
+            new MovieDto { Title = "Test Movie 2" },
+            new MovieDto { Title = "Test Movie 3" },
+            new MovieDto { Title = "Test Movie 1" }
         };
 
         _movieRepositoryMock.Setup(repo => repo.GetTopByTitleAsync(title, 3, CancellationToken.None))

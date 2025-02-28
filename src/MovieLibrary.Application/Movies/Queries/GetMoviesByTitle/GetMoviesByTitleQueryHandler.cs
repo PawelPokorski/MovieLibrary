@@ -3,7 +3,7 @@ using MovieLibrary.Application.Configuration.Queries;
 using MovieLibrary.Application.Dtos;
 using MovieLibrary.Core.Interfaces.Repositories;
 
-namespace MovieLibrary.Application.Movies.GetMoviesByTitle;
+namespace MovieLibrary.Application.Movies.Queries.GetMoviesByTitle;
 
 internal class GetMoviesByTitleQueryHandler(IMovieRepository movieRepository, IMapper mapper)
     : IQueryHandler<GetMoviesByTitleQuery, IEnumerable<MovieDto>>
