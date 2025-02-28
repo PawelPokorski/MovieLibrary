@@ -41,7 +41,7 @@ Ten projekt jest realizowany w celach edukacyjnych i stanowi świetną bazę do 
 1.  Sklonuj repozytorium:
 
     ```bash
-    git clone [https://github.com/PawelPokorski/MovieLibrary.git](https://github.com/PawelPokorski/MovieLibrary.git)
+    git clone https://github.com/PawelPokorski/MovieLibrary.git
     ```
 
 2.  Upewnij się, że masz zainstalowany .NET Core 9.0 SDK.
